@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="tei-to-html.xsl"?>
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 <script src="./lib/js/xslt-polyfill.min.js" xmlns="http://www.w3.org/1999/xhtml"></script>
     <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
@@ -1168,12 +1169,12 @@
                     <lg xml:id="SS.1.6.7"><l> ta e<cb/>te śītoṣṇavarṣavātalakṣaṇāḥ |
                         candrādityayoḥ kālavibhāgakaratvād ayane dve bhavataḥ | dakṣiṇam
                             uttara<lb n="6"/>ñ ca | tayor ddakṣiṇaṃ varṣāśaraddhemantāḥ |
-                        teṣu bhagavān ā<unclear>p</unclear>yāyyate somaḥ |
+                        teṣu bhagavān nāpyāyyate somaḥ |
                         amlalavaṇamadhurāś ca rasā balavanto bhavanti | uttarottarañ ca
-                        sarvvaprāṇināṃ balam abhivardhate | uttaraṃ śiśira<pb ana="dscn2987 fol 011.jpg" facs="13" n="11v"/><lb n="1"/>vasantagrīṣmāḥ | teṣu bhagavān āpyāyyate 'rkkaḥ | kaṭutiktakaṣā<subst>
-                            <del>yā</del>
-                            <add>ya</add>
-                        </subst>ś ca rasā balavattarā bhavanti | uttarottarañ ca prāṇināṃ
+                        sarvvaprāṇināṃ balam abhivardhate | uttaraṃ śiśira<pb ana="dscn2987 fol
+                            011.jpg" facs="13" n="11v"/><lb n="1"/>vasantagrīṣmāḥ | teṣu bhagavān
+                            āpyāyyate 'rkkaḥ | kaṭutiktakaṣāyāś ca rasā balavattarā bhavanti |
+                            uttarottarañ ca prāṇināṃ
                         balaṃ parihīyate || </l></lg>
 
                     <lg xml:id="SS.1.6.8"><l>
@@ -1187,81 +1188,83 @@
                         || </l></lg>
 
                     <lg xml:id="SS.1.6.9"><l> atha<cb/> khalv ayane yugapat saṃvatsaro bhavati
-                        | te dve ayane varṣaḥ saṃvatsaraḥ parivatsaraḥ | iḍā vatsaraḥ |
-                            i<unclear>ḍ</unclear>vatsa<lb n="3"/><add place="left margin">ḍo</add><!-- could not ascertain the place of addition -->raḥ
+                        | te dve ayane varṣaḥ saṃvatsaraḥ parivatsaraḥ | iḍāvatsaraḥ |
+                        idvatsa<lb n="3"/><!--<add place="left margin">ḍā</add> could not ascertain the place of addition -->raḥ
                         | vatsara ity evaṃ pañca pañca varṣāṇi | te pañca yugam iti saṃjñā
                         labha<cb/>nte sa eṣa nimeṣādir yugaparyantaḥ kālaś cakravat
                         parivarttamānaḥ kālacakra ity ucyate || </l></lg>
 
-                    <lg xml:id="SS.1.6.9.add"><l> evan dakṣiṇāya<lb n="4"/><add place="left margin">e</add><!-- could not ascertain the place of addition -->ne
+                    <lg xml:id="SS.1.6.9.add"><l> evan dakṣiṇāya<lb n="4"/><!--<add place="left margin">e</add> could not ascertain the place of addition -->ne
                         rātrir vvyākhyātā || </l></lg>
 
                     <lg xml:id="SS.1.6.10"><l> iha tu
                             varṣāśaraddhemantavasantagrīṣmaprāvṛ<unclear extent="1" unit="char"/><cb/>ṣaḥ ṣaḍṛtavo bhavanti |
                             doṣopacayaprakopapraśa<unclear>ma</unclear>nimittaṃ | te tu
-                        bhādrapadādyair dvimāsike naivaṃ vyā<unclear extent="1" unit="char"/><lb n="5"/>khyātāḥ || tadyathā bhadrapadāśvayujau
+                        bhādrapadādyair dvimāsikenaivaṃ vyā<unclear extent="1" unit="char"/><lb
+                            n="5"/>khyātāḥ || tad yathā bhadrapadāśvayujau
                         varṣāḥ | kārttikamārggaśīrṣau śa<cb/>rat | pauṣamāghau hemantaḥ |
                         phālgunacaitrau vasantaḥ | vaiśākhajyeṣṭhau grīṣmaḥ |
                         āṣāḍhaśrāvaṇau prāvṛḍ i<lb n="6"/>ti || </l></lg>
 
                     <lg xml:id="SS.1.6.11"><l> tatra varṣāsv auṣadhyas taruṇyo 'lpavīryā
-                        āhāratvam upagatā vidahyante | āpaś cāprasannāḥ kṣitimalaprāyās
+                        āhāratvam upagatā vidahyante | āpaś cāpraśāntāḥ kṣitimalaprāyās
                         tās tūpayujyamānā nabhasi meghāvatate jalapraklinnāyāṃ bhūmau<pb facs="13" n="12r"/><lb n="1"/><gap n="7" unit="char"/><unclear extent="1" unit="char"/><gap n="1" unit="char"/> klinnadehānān
-                        dehināṃ śīta<pc> </pc>vāta<pc> </pc>varṣa<pc> </pc>viṣṭambhitāgnīnāṃ vidahyante | <unclear>sa</unclear>
-                        vidāhāt pittasañcayam āpādayanti | sa sañcayaḥ
-                            <unclear>śa</unclear>ra<del rend="erased" resp="scribe">i</del>di <unclear>pra</unclear>viralameṇa vi<lb n="2"/><unclear>la</unclear>yaty upaśuṣyati paṅkārka<pc> </pc>kiraṇa<pc> </pc>pravilāyitaḥ paittikān<cb/> vyādhīn
+                        dehināṃ śīta<pc> </pc>vāta<pc> </pc>varṣa<pc> </pc>viṣṭambhitāgnīnāṃ vidahyante | savidāhāt pittasañcayam āpādayanti | sa sañcayaḥ
+                            <unclear>śa</unclear>ra<del rend="erased" resp="scribe">i</del>di
+                            praviralameṇa vi<lb n="2"/>layaty upaśuṣyati paṅkārkka<pc> </pc>kiraṇa<pc> </pc>pravilāyitaḥ paittikān<cb/> vyādhīn
                         janayati | tā evauṣadhayaḥ kālapariṇāmāt pariṇatavīryā
                             balava<unclear>tyo</unclear> hemaṃte bhavanti | <lb n="3"/>
                         āpaś ca praśāntāḥ | snigdhā atyarthaṅ gurvvyas tā upayujyamānāḥ |
                         <cb/> mandakiraṇatvād bhānoḥ satuṣāropa<pc> </pc>ṣṭaṃbhita<pc> </pc>dehānān dehinām
                             avida<unclear>gdh</unclear>āḥ snehād gauravād upalepi<lb n="4"/>tvāc ca śleṣmaṇaḥ sañcayam āpādayanti | sa sañcayo vasante
-                            '<cb/>rkka<pc> </pc>kiraṇa<pc> </pc>pravilāpitaḥ śleṣmikān
-                        vyādhīn janayati | tā evauṣadhyo grīṣmaniḥsārā rūkṣā<lb n="5"/>
+                            '<cb/>rkka<pc> </pc>kiraṇa<pc> </pc>pravilāyitaḥ śleṣmikān
+                        vyādhīn janayati | tā evauṣadhyo grīṣme niḥsārā rūkṣā<lb n="5"/>
                         atimātralaghvyo bhavaty āpaś ca tā upayujyamānāḥ |
                         sūryapratā<cb/>popaśoṣitadehānāṃ dehināṃ raukṣyāl lāghavāc ca
-                        vāyoḥ sañcayam āpādayanti | sa sañcayaḥ prāvṛṣi cā<lb n="6"/>tyarthañ jalopaklinnāyāṃ <unclear>bh</unclear>ūmau yāti
-                        klinnadehānān dehināṃ śītavātavarṣerito vātikān vyādhīn janayati |
+                        vāyoḥ sañcayam āpādayanti | sa sañcayaḥ prāvṛṣi cā<lb n="6"/>tyarthañ
+                            jalopaklinnāyāṃ <unclear>bh</unclear>ūmau cātiklinnadehānān dehināṃ śītavātavarṣerito vātikān vyādhīn janayati |
                         evam eṣan doṣāṇāṃ sañcayaprakopahetur uktāḥ ||</l></lg>
 
                     <!-- The number 12 is left out in the vulgate -->
 
 
-                    <lg xml:id="SS.1.6.12"><l> tatra varśāhemanta<pb ana="dscn2988 fol 012.jpg upper" facs="14" n="12v"/><lb n="1"/>grīṣmeṣu sañcitānāṃ doṣāṇāṃ
+                    <lg xml:id="SS.1.6.12"><l> tatra varṣāhemanta<pb ana="dscn2988 fol 012.jpg upper" facs="14" n="12v"/><lb n="1"/>grīṣmeṣu sañcitānāṃ doṣāṇāṃ
                             śaradvasantaprāvṛ<unclear>ṭsu</unclear> ca prakupitānāṃ
                         nirharaṇaṃ | </l></lg>
 
                     <lg xml:id="SS.1.6.13"><l> tatra paittikānāṃ vyādhīnāṃ hemante vyupaśamaḥ
                         | ślaiṣmikānāṃ nidāghe<unclear extent="1" unit="char"/> vātikānāṃ
-                        śaradi | svabhāvatas tv e<lb n="2"/><add place="left margin">ḍo</add><!-- did not find the place of addition -->te
-                        sañcayaprakopopaśamākhyātāḥ || </l></lg>
+                        śaradi | svabhāvatas tv e<lb n="2"/><!-- <add place="left margin">ḍo</add> did not find the place of addition -->te
+                        sañcayaprakopopaśam ākhyātāḥ || </l></lg>
 
-                    <lg xml:id="SS.1.6.14"><l> tatra divasa pūrvvāhṇe vasanta<cb/>sya liṅgaṃ |
-                        madhyāhne grīṣmasya | aparāhṇe prāvṛḍliṇgaṃ | pradoṣe vārṣikāṃ |
-                        śāradam ardharātre | pra<unclear>tyu</unclear>ṣa<lb n="3"/><add place="left margin">dvi</add><!-- place of addition not known --><del>mi</del><add>si</add>
-                        hemantam upalakṣayet | evam ahorātram api varṣam iva
+                    <lg xml:id="SS.1.6.14"><l> tatra divasapūrvvāhṇe vasanta<cb/>liṅgaṃ |
+                        madhyāhne grīṣmasya | aparāhṇe prāvṛḍliṇgaṃ | pradoṣe vārṣikaṃ |
+                        śāradam arddharātre | pratyuṣa<lb n="3"/><!--<add place="left
+                            margin">dvi</add> place of addition not known -->si hemantam upalakṣayet | evam ahorātram api varṣam iva
                         śīto<cb/>ṣṇavarṣadoṣopacayaprakopopaśamair jjānīyāt || </l></lg>
 
                     <lg xml:id="SS.1.6.15"><l> tatra vyāpanneṣv ṛtuṣv avyāpannā oṣadhayo
-                            bhava<lb n="4"/>nty āpaś ca | tāṃ tūpayujyamānāḥ
+                            bhava<lb n="4"/>nty āpaś ca | tās tūpayujyamānāḥ
                         prāṇāyurbbalavīryaujaskaryo bhavanti<cb/> | </l></lg>
 
-                    <lg xml:id="SS.1.6.16"><l> tā<del>mā</del><add>sā</add>ṃ punar vyāpado
-                        dṛṣṭakāritāni ṣītoṣṇavātavarṣāṇi | khalu viparītāny auṣadhīr
+                    <lg xml:id="SS.1.6.16"><l> tāsām punar vvyāpado
+                        dṛṣṭakāritāni śītoṣṇavātavarṣāṇi | khalu viparītāny auṣadhīr
                             vyāpāda<lb n="5"/>yanty āpaś ca || </l></lg>
 
-                    <lg xml:id="SS.1.6.17"><l> tā<del>mā</del><add>sā</add>m upayogād
-                            vividharogaprādur<unclear>bhā</unclear>vo marako<cb/> vā
+                    <lg xml:id="SS.1.6.17"><l> tāsām upayogād
+                            vividharogaprādurbbhāvo marako<cb/> vā
                         bhavati || </l></lg>
 
 
                     <lg xml:id="SS.1.6.19"><l> kadācid avyāpanneṣv api
-                        kṛtyābhiśāparakṣaḥkrodhād adharmair uṣasyante janapadāḥ | <lb n="6"/> viṣauṣadhipuṣpagandhena vā vāyunopanītena |
+                        kṛtyābhiśāparakṣaḥkrodhād adharmmair udhvasyante janapadāḥ | <lb n="6"/> viṣauṣadhipuṣpagandhena vā vāyunopanītena |
                         kāsaśvāsapratisyāyaśirorogajvarair upatapyante prajāḥ |
                         grahanakṣatracaritair vvā |
                             śayanā<del>ma</del><add>sa</add>nayānavāhanamaṇira<pb ana="dscn2988 fol                             012.jpg lower" facs="14" n="13r"/><lb n="1"/>tnopakaraṇagarhitalakṣaṇaprādur<unclear>bhā</unclear>vair
                         vvā </l></lg>
 
-                    <lg xml:id="SS.1.6.20"><l> jāto 'tra | parityāga<pc> </pc>śānti<pc> </pc>prāyaścitta<pc> </pc>bali<pc> </pc>maṅgala<pc> </pc>japa<pc> </pc>homopahārejyāñjali<pc> </pc>namaskāra<pc> </pc>tapo<pc> </pc>niyama<pc> </pc>dayā<pc> </pc>dāna<pc> </pc>dīkṣābhyupaga<lb n="2"/>ma<pc> </pc>devatā<pc> </pc>brāhmaṇa<pc> </pc>guru<pc> </pc>parair <unclear>bha</unclear>vitavyam e aṃ sādhur bhavati
+                    <lg xml:id="SS.1.6.20"><l> jāto 'tra | parityāga<pc> </pc>śānti<pc>
+                    </pc>prāyaścitta<pc> </pc>bali<pc> </pc>maṅgala<pc> </pc>japa<pc> </pc>homopahārejyāñjali<pc> </pc>namaskāra<pc> </pc>tapo<pc> </pc>niyama<pc> </pc>dayā<pc> </pc>dāna<pc> </pc>dīkṣābhyupaga<lb n="2"/>ma<pc> </pc>devatā<pc> </pc>brāhmaṇa<pc> </pc>guru<pc> </pc>parair <unclear>bha</unclear>vitavyam evaṃ sādhur bhavati
                         || </l></lg>
 
 
@@ -2360,7 +2363,7 @@
                         pavanaś ca paraṃ kopaṃ yāti tasmāt prayatnataḥ || </l></lg>
 
                     <lg xml:id="SS.1.14.38"><l> tan nātiśītair llaghubhiḥ snigdhaiḥ
-                        śoṇitevarddhanaiḥ | īṣa<pb n="27v" facs="29"/>damlair anamlair vvā
+                        śoṇitevarddhanaiḥ | īṣa<pb n="27v" facs="29"/>d amlair anamlair vvā
                         bhojanaiḥ samupācaret || </l></lg>
 
                     <lg xml:id="SS.1.14.39"><l> caturvvidhaṃ yad etad dhi
