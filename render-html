@@ -1,0 +1,55 @@
+#!/bin/bash
+# Pre-render the TEI files to HTML with xsltproc, so that website visitors
+# get HTML instead of relying on XSLT in the browser.
+#
+# Each tracked .xml file whose <?xml-stylesheet?> line names edition.xsl
+# (the provisional editions) or tei-to-html.xsl (the manuscripts) gets a
+# .html file next to it. The .xml files stay as they are and are still
+# published: Saktumiva's edit mode works on them.
+#
+# Needs the lib/ and saktumiva/ submodules checked out.
+# Used by .github/workflows/pages.yml; can also be run by hand.
+# The large provisional editions take about a minute each, so files are
+# rendered in parallel.
+
+set -euo pipefail
+cd "$(dirname "$0")"
+
+# Edit mode needs the XML source and in-browser XSLT, so "?edit" on an
+# .html page goes to the matching .xml page. Same condition as in
+# saktumiva/editmode/editmode.mjs.
+export EDITREDIRECT='<script>(function(){var p=new URLSearchParams(location.search);if(p.get("noedit")!==null)return;var h=location.hostname;if(p.get("edit")!==null||["localhost","[::1]","127.0.0.1","0.0.0.0"].indexOf(h)!==-1)location.replace(location.pathname.replace(/\.html$/,".xml")+location.search+location.hash);})();</script>'
+
+render() {
+    shopt -u patsub_replacement 2>/dev/null || true
+    local xml=$1 sheet dir html out
+    [[ -f "$xml" ]] || return 0
+    case "$xml" in */alignments/*|lib/*|saktumiva/*|xml/*) return 0 ;; esac
+    sheet=$(head -c 2000 "$xml" | grep -o '<?xml-stylesheet[^?]*' | head -1 | sed -n 's/.*href="\([^"]*\)".*/\1/p') || true
+    case "$sheet" in edition.xsl|tei-to-html.xsl) ;; *) return 0 ;; esac
+    dir=$(dirname "$xml")
+    if [[ ! -f "$dir/$sheet" ]]; then
+        echo "::warning file=$xml::skipped, there is no $dir/$sheet" >&2
+        return 0
+    fi
+    html="${xml%.xml}.html"
+    if ! out=$(xsltproc --nonet "$dir/$sheet" "$xml"); then
+        # (the ::error line is shown as an annotation on GitHub)
+        echo "::error file=$xml::xsltproc could not render $xml" >&2
+        return 1
+    fi
+    # xsltproc copies the <?xml-stylesheet?>/<?xml-model?> lines before
+    # <html>; drop them.
+    out="<html>${out#*<html>}"
+    if [[ "$sheet" == edition.xsl ]]; then
+        out="${out/<head>/<head>$'\n'$EDITREDIRECT}"
+    fi
+    # No <!DOCTYPE>: the browser-side XSLT output is in quirks mode too, and
+    # the CSS has always been seen that way.
+    printf '%s\n' "$out" > "$html"
+    echo "$xml -> $html"
+}
+export -f render
+
+git ls-files -z -- '*.xml' |
+    xargs -0 -n 1 -P "$(nproc)" bash -c 'render "$1"' _

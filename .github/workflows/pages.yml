@@ -1,0 +1,57 @@
+# Builds the website: pre-renders the TEI files to HTML with xsltproc
+# (see render-html), then runs the same Jekyll build that GitHub Pages
+# used before, and deploys the result.
+#
+# Requires Settings → Pages → Build and deployment → Source: "GitHub Actions".
+
+name: Build and deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # lib/ and saktumiva/ are submodules (they are also in .gitignore, which
+      # does not affect submodules). The site needs both.
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install xsltproc
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends xsltproc
+
+      - name: Pre-render TEI to HTML
+        run: ./render-html
+
+      - uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

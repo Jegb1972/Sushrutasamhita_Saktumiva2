@@ -20,28 +20,28 @@ The following files are complex and will take a moment or two to load and displa
 
 ## Sūtrasthānam (also called Ślokasthānam)
 
-* [Sūtrasthānam  1-31](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/01-su.su-1-31/provisional-edition_sutrasthana-1-31.xml)
-* [Sūtrasthānam 32-46](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/01-su.su-32-end/provisional-edition_sutrasthana-32-end.xml)
+* [Sūtrasthānam  1-31](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/01-su.su-1-31/provisional-edition_sutrasthana-1-31.html)
+* [Sūtrasthānam 32-46](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/01-su.su-32-end/provisional-edition_sutrasthana-32-end.html)
 
 ## Nidānasthānam
-* [Nidānasthānam](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/02-su.ni/provisional-edition_nidanasthana.xml)
+* [Nidānasthānam](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/02-su.ni/provisional-edition_nidanasthana.html)
 
 ## Śārīrasthānam
-* [Śārīrasthānam](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/03-su.sa/provisional-edition_sarirasthana.xml).
+* [Śārīrasthānam](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/03-su.sa/provisional-edition_sarirasthana.html).
 
 ## Cikitsāsthānam
 
-* [Cikitsāsthānam 1-20](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/04-su.ci-1-20/provisional-edition_cikitsasthana_01-20.xml)
-* [Cikitsāsthānam 21-40](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/04-su.ci-21-40/provisional-edition_cikitsasthana_21-40.xml)
+* [Cikitsāsthānam 1-20](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/04-su.ci-1-20/provisional-edition_cikitsasthana_01-20.html)
+* [Cikitsāsthānam 21-40](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/04-su.ci-21-40/provisional-edition_cikitsasthana_21-40.html)
 
 ## Kalpasthānam
-* [Kalpasthānam](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/05-su.ka/provisional-edition_kalpasthana.xml)
+* [Kalpasthānam](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/05-su.ka/provisional-edition_kalpasthana.html)
 
 ## Uttaratantra
-* [Śālākyatantram: adhyāyas 1-26](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/06-su.ut-01-26-salakya/provisional-edition_uttaratantra-01-26.xml)
-* [Kumāratantram: adhyāyas 27-37](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/06-su.ut-27-37-kumara/provisional-edition_uttaratantra-27-37.xml)
-* [Kāyacikitsātantram: adhyāyas 39-57 (with 24)](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/06-su.ut-39-24-57-kayacikitsa/provisional-edition_uttaratantra-39-24-57.xml)
-* [Kāyacikitsātantra – Daśaka: adhyāyas 58–66 (with 38)](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/06-su.ut-58-38-66-dasaka/provisional-edition_uttaratantra-58-38-66.xml)
+* [Śālākyatantram: adhyāyas 1-26](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/06-su.ut-01-26-salakya/provisional-edition_uttaratantra-01-26.html)
+* [Kumāratantram: adhyāyas 27-37](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/06-su.ut-27-37-kumara/provisional-edition_uttaratantra-27-37.html)
+* [Kāyacikitsātantram: adhyāyas 39-57 (with 24)](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/06-su.ut-39-24-57-kayacikitsa/provisional-edition_uttaratantra-39-24-57.html)
+* [Kāyacikitsātantra – Daśaka: adhyāyas 58–66 (with 38)](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/06-su.ut-58-38-66-dasaka/provisional-edition_uttaratantra-58-38-66.html)
 
 ### Citation of this web page
 Dominik Wujastyk and Jegb1972. “sushrutaproject1/Sushrutasamhita_Saktumiva2”. Archived at Zenodo, May 8, 2026. https://doi.org/10.5281/zenodo.20091014.
@@ -77,7 +77,7 @@ Witness K is not available for most of this adhyāya.
 
 
 
-##  [Śārīrasthānam](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/03-su.sa/provisional-edition_sarirasthana.xml) 
+##  [Śārīrasthānam](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/03-su.sa/provisional-edition_sarirasthana.html) 
 
 Based on witnesses N, and H.  
 Witness K is not available for this adhyāya.  
