@@ -26,7 +26,7 @@ jobs:
     steps:
       # lib/ and saktumiva/ are submodules (they are also in .gitignore, which
       # does not affect submodules). The site needs both.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: recursive
 
