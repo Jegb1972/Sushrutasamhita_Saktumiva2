@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xml:lang="sa-Latn">
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xml:lang="sa-Latn-t-sa-Deva">
   <teiHeader>
 <listWit>
-<witness xml:id="A1938" source="01-su-vulgate-1938-1-31.xml">
-<abbr>A1938</abbr>
+<witness xml:id="A" source="01-su-vulgate-1938-1-31.xml">
+<abbr>A</abbr>
 <expan>Printed edition: Ācārya 1938: Sūtrasthāna 1-31</expan>
+</witness>
+<witness xml:id="L" source="bl_iolr_1842_sutrasthana.xml">
+<abbr>L</abbr>
+<expan>MS London BL/IOLR Taylor 1842: Sūtrasthāna 12</expan>
+<listWit>
+<witness xml:id="Lac" n="ac">
+<abbr>Lac</abbr>
+<expan>MS London BL/IOLR Taylor 1842: Sūtrasthāna 12 [ante correctionem]</expan>
+</witness>
+<witness xml:id="Lpc" n="pc">
+<abbr>Lpc</abbr>
+<expan>MS London BL/IOLR Taylor 1842: Sūtrasthāna 12 [post correctionem]</expan>
+</witness>
+</listWit>
 </witness>
 <witness xml:id="K" source="kl_699_sutrasthana-1-31.xml">
 <abbr>K</abbr>
@@ -15,7 +29,7 @@
 <expan>MS Kathmandu KL 699: Sūtrasthāna 1-31 [ante correctionem]</expan>
 </witness>
 <witness xml:id="Kpc" n="pc">
-<abbr type="siglum">Kpc</abbr>
+<abbr>Kpc</abbr>
 <expan>MS Kathmandu KL 699: Sūtrasthāna 1-31 [post correctionem]</expan>
 </witness>
 </listWit>
@@ -29,7 +43,7 @@
 <expan>MS Kathmandu NAK 1-1079: Sūtrasthāna 1-31 [ante correctionem]</expan>
 </witness>
 <witness xml:id="Npc" n="pc">
-<abbr type="siglum">Npc</abbr>
+<abbr>Npc</abbr>
 <expan>MS Kathmandu NAK 1-1079: Sūtrasthāna 1-31 [post correctionem]</expan>
 </witness>
 </listWit>
@@ -43,15 +57,15 @@
 <expan>MS Kathmandu NAK 5-333: Sūtrasthāna 1-31 [ante correctionem]</expan>
 </witness>
 <witness xml:id="Hpc" n="pc">
-<abbr type="siglum">Hpc</abbr>
+<abbr>Hpc</abbr>
 <expan>MS Kathmandu NAK 5-333: Sūtrasthāna 1-31 [post correctionem]</expan>
 </witness>
 </listWit>
 </witness>
 <witness xml:id="NE" source="provisional-edition_sutrasthana-1-31_new.xml">
 <abbr>NE</abbr>
-<expan>The Nepalese Version of the Suśrutasaṃhitā, Sūtrasthāna 1-31, based
-                    on the Nepalese MSS</expan>
+<expan>The Nepalese Version of the Suśrutasaṃhitā, Sūtrasthāna 1-31, based on the
+                    Nepalese MSS</expan>
 </witness>
 </listWit>
     <encodingDesc>
@@ -119,11 +133,12 @@
 <tag subtype="ignore">metamark</tag>
 <tag subtype="ignore">supplied</tag>
 <tag subtype="ignore">surplus</tag>
+<tag subtype="ignore">trailer</tag>
         </ab>
       </editorialDecl>
     </encodingDesc>
     <xenoData>
-      <stemma format="nexml" id="stemma0"><nex:nexml xmlns:nex="http://www.nexml.org/2009" version="0.9"><nex:otus id="otus1"><nex:otu id="otu0" label="A1938"/><nex:otu id="otu1" label="H"/><nex:otu id="otu2" label="N"/><nex:otu id="otu3" label="K"/><nex:otu id="otu4" label="NE"/></nex:otus><nex:trees otus="otus1" id="trees1"><nex:tree id="guidetree" label="guidetree" xsi:type="nex:FloatTree" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><nex:node id="708abc0a-8e56-48bb-982e-c84046a9d367" root="true"/><nex:node id="40fe6ab8-cfdc-421f-a0ac-7042f9e4ba17"/><nex:node id="59aab74f-d97c-4e0d-8c51-c290946cf76b"/><nex:node id="323418d1-ab8e-4864-ac11-a1fa3f79046d" label="A1938" otu="otu3"/><nex:node id="e5757657-2342-4bd0-b76d-0893fee41d75" label="H" otu="otu4"/><nex:node id="8ed1dd96-5802-4274-bbb1-7e5bd12004c0" label="N" otu="otu5"/><nex:node id="557e8cb1-7a96-4c76-bade-e5ac45119413"/><nex:node id="4806335c-80fd-4458-9f1f-4a682342c8ca" label="K" otu="otu7"/><nex:node id="0c06b64c-8bd4-4ee9-8943-0de582fe5f3e" label="NE" otu="otu8"/><nex:edge source="708abc0a-8e56-48bb-982e-c84046a9d367" target="40fe6ab8-cfdc-421f-a0ac-7042f9e4ba17" id="edge0" length="0"/><nex:edge source="708abc0a-8e56-48bb-982e-c84046a9d367" target="557e8cb1-7a96-4c76-bade-e5ac45119413" id="edge1" length="0"/><nex:edge source="40fe6ab8-cfdc-421f-a0ac-7042f9e4ba17" target="59aab74f-d97c-4e0d-8c51-c290946cf76b" id="edge2" length="0"/><nex:edge source="40fe6ab8-cfdc-421f-a0ac-7042f9e4ba17" target="8ed1dd96-5802-4274-bbb1-7e5bd12004c0" id="edge3" length="1.5"/><nex:edge source="557e8cb1-7a96-4c76-bade-e5ac45119413" target="4806335c-80fd-4458-9f1f-4a682342c8ca" id="edge4" length="0"/><nex:edge source="557e8cb1-7a96-4c76-bade-e5ac45119413" target="0c06b64c-8bd4-4ee9-8943-0de582fe5f3e" id="edge5" length="0"/><nex:edge source="59aab74f-d97c-4e0d-8c51-c290946cf76b" target="323418d1-ab8e-4864-ac11-a1fa3f79046d" id="edge6" length="0"/><nex:edge source="59aab74f-d97c-4e0d-8c51-c290946cf76b" target="e5757657-2342-4bd0-b76d-0893fee41d75" id="edge7" length="0"/></nex:tree></nex:trees></nex:nexml></stemma>
+      <stemma format="nexml" id="stemma0"><nex:nexml xmlns:nex="http://www.nexml.org/2009" version="0.9"><nex:otus id="otus1"><nex:otu id="otu0" label="A"/><nex:otu id="otu1" label="H"/><nex:otu id="otu2" label="N"/><nex:otu id="otu3" label="K"/><nex:otu id="otu4" label="NE"/></nex:otus><nex:trees otus="otus1" id="trees1"><nex:tree id="guidetree" label="guidetree" xsi:type="nex:FloatTree" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><nex:node id="de07e285-cc39-4757-a7db-d2a25a0fcb94" root="true"/><nex:node id="c3ca2eae-e5bc-4747-af01-f607bcb8825a"/><nex:node id="31508e11-fbe7-4736-beca-f0989c254bc2"/><nex:node id="28a2b18f-294e-478f-a8c5-cb265a5f5c90" label="A" otu="otu3"/><nex:node id="774ac0ec-49d2-4a98-adf1-39659c6b21dd" label="H" otu="otu4"/><nex:node id="2baac7d1-7648-408f-8484-287669b7bf37" label="N" otu="otu5"/><nex:node id="bebbeba0-7335-49cd-a301-196da19da95d"/><nex:node id="b89d6645-6a02-412d-b118-0456c665fdb3" label="K" otu="otu7"/><nex:node id="ae92960d-c2c0-444a-9c05-8dc0a3269a8f" label="NE" otu="otu8"/><nex:edge source="de07e285-cc39-4757-a7db-d2a25a0fcb94" target="c3ca2eae-e5bc-4747-af01-f607bcb8825a" id="edge0" length="0"/><nex:edge source="de07e285-cc39-4757-a7db-d2a25a0fcb94" target="bebbeba0-7335-49cd-a301-196da19da95d" id="edge1" length="0"/><nex:edge source="c3ca2eae-e5bc-4747-af01-f607bcb8825a" target="31508e11-fbe7-4736-beca-f0989c254bc2" id="edge2" length="0"/><nex:edge source="c3ca2eae-e5bc-4747-af01-f607bcb8825a" target="2baac7d1-7648-408f-8484-287669b7bf37" id="edge3" length="1.5"/><nex:edge source="bebbeba0-7335-49cd-a301-196da19da95d" target="b89d6645-6a02-412d-b118-0456c665fdb3" id="edge4" length="0"/><nex:edge source="bebbeba0-7335-49cd-a301-196da19da95d" target="ae92960d-c2c0-444a-9c05-8dc0a3269a8f" id="edge5" length="0"/><nex:edge source="31508e11-fbe7-4736-beca-f0989c254bc2" target="28a2b18f-294e-478f-a8c5-cb265a5f5c90" id="edge6" length="0"/><nex:edge source="31508e11-fbe7-4736-beca-f0989c254bc2" target="774ac0ec-49d2-4a98-adf1-39659c6b21dd" id="edge7" length="0"/></nex:tree></nex:trees></nex:nexml></stemma>
     </xenoData>
   </teiHeader>
-<TEI n="A1938"><text><cl><w n="0" lemma="śū"> śū</w><w n="1">ka</w><w n="2">do</w><w n="3">ṣa</w><w n="4">ci</w><w n="5">ki</w><w n="6" lemma="tsā">tsā </w><w n="7" lemma="ca">ca </w></cl><cl><w n="8">ta</w><w n="9" lemma="thā">thā </w><w n="10" lemma="ca">ca </w></cl><cl><w n="11">mu</w><w n="12">kha</w><w n="13">ro</w><w n="14">gi</w><w n="15" lemma="ṇāṃ">ṇām | </w></cl><cl><w n="16">śo</w><w n="17">pha</w><w n="18">syā</w><w n="19">nā</w><w n="20">ga</w><w n="21">tā</w><w n="22" lemma="nāṃ">nāṃ </w><w n="23" lemma="ca">ca </w></cl><cl><w n="24">ni</w><w n="25">ṣe</w><w n="26" lemma="dhaḥ">dho </w></cl><cl><w n="27">mi</w><w n="28">śra</w><w n="29" lemma="kaṃ">kaṃ </w></cl><cl><w n="30">ta</w><w n="31" lemma="thā">thā ||21|| </w></cl></text></TEI><TEI n="H"><text><cl><w n="0" lemma="śū"> śū</w><w n="1">ka</w><w n="2">do</w><w n="3">ṣa</w><w n="4">ci</w><w n="5">ki</w><w n="6" lemma="tsā">tsā </w><w n="7" lemma="ca">ca </w></cl><cl><w n="8">ta</w><w n="9" lemma="thā">thā </w><w n="10" lemma="ca">ca </w></cl><cl><w n="11">mu</w><w n="12">kha</w><w n="13">ro</w><w n="14">gi</w><w n="15" lemma="ṇāṃ">ṇām | </w></cl><cl><w n="16">śo</w><w n="17">pha</w><w n="18">syā</w><w n="19">nā</w><w n="20">ga</w><w n="21">tā</w><w n="22" lemma="nāṃ">nāñ </w><w n="23" lemma="ca">ca </w></cl><cl><w n="24">ni</w><w n="25">ṣe</w><w n="26" lemma="dhaḥ">dho </w></cl><cl><w n="27">mi</w><w n="28">śra</w><w n="29" lemma="kaṃ">kan </w></cl><cl><w n="30">ta</w><w n="31" lemma="thā">thā || </w></cl></text></TEI><TEI n="N"><text><cl><w n="0" lemma="śū"> śū</w><w n="1">ka</w><w n="2">do</w><w n="3">ṣa</w><w n="4">ci</w><w n="5">ki</w><w n="6" lemma="tsā">tsā </w><w n="7" lemma="ca">ca </w></cl><cl><w n="8">ta</w><w n="9" lemma="thā">thā </w><w n="10" lemma="ca">ca </w></cl><cl><w n="11">mu</w><w n="12">kha</w><w n="13">ro</w><w n="14">gi</w><w n="15" lemma="nāṃ">nām | </w></cl><cl><w n="16">śo</w><w n="17">pha</w><w n="18">syā</w><w n="19">nā</w><w n="20">ga</w><w n="21">tā</w><w n="22" lemma="nāṃ">nāñ </w><w n="23" lemma="ca">ca </w></cl><cl><w n="24">ni</w><w n="25">ṣe</w><w n="26" lemma="dhaḥ">dho </w></cl><cl><w n="27">mi</w><w n="28">śra</w><w n="29" lemma="kaṃ">kan </w></cl><cl><w n="30">ta</w><w n="31" lemma="thā">thā | </w></cl></text></TEI><TEI n="K"><text><cl><w n="0">śū</w><w n="1">ka</w><w n="2">do</w><w n="3">ṣa</w><w n="4">ci</w><w n="5">ki</w><w n="6" lemma="tsā">tsā </w><w n="7" lemma="ca">ca </w></cl><cl><w n="8">ta</w><w n="9" lemma="thā">thā </w><w n="10" lemma="ca">ca </w></cl><cl><w n="11">mu</w><w n="12">kha</w><w n="13">ro</w><w n="14">gi</w><w n="15" lemma="ṇāṃ">ṇāṃ | </w></cl><cl><w n="16">śo</w><w n="17">pha</w><w n="18">syā</w><w n="19">nā</w><w n="20">ga</w><w n="21">tā</w><w n="22" lemma="nāṃ">nāñ </w><w n="23" lemma="ca">ca </w></cl><cl><w n="24">ni</w><w n="25">ṣe</w><w n="26" lemma="dhaḥ">dho </w></cl><cl><w n="27">mi</w><w n="28">śra</w><w n="29" lemma="kaṃ">kan </w></cl><cl><w n="30">ta</w><w n="31" lemma="thā">thā |</w></cl></text></TEI><TEI n="NE"><text><cl><w n="0" lemma="śū"> śū</w><w n="1">ka</w><w n="2">do</w><w n="3">ṣa</w><w n="4">ci</w><w n="5">ki</w><w n="6" lemma="tsā">tsā </w><w n="7" lemma="ca">ca </w></cl><cl><w n="8">ta</w><w n="9" lemma="thā">thā </w><w n="10" lemma="ca">ca </w></cl><cl><w n="11">mu</w><w n="12">kha</w><w n="13">ro</w><w n="14">gi</w><w n="15" lemma="ṇāṃ">ṇāṃ | </w></cl><cl><w n="16">śo</w><w n="17">pha</w><w n="18">syā</w><w n="19">nā</w><w n="20">ga</w><w n="21">tā</w><w n="22" lemma="nāṃ">nāñ </w><w n="23" lemma="ca">ca </w></cl><cl><w n="24">ni</w><w n="25">ṣe</w><w n="26" lemma="dhaḥ">dho </w></cl><cl><w n="27">mi</w><w n="28">śra</w><w n="29" lemma="kaṃ">kan </w></cl><cl><w n="30">ta</w><w n="31" lemma="thā">thā |</w></cl></text></TEI></teiCorpus>
+<TEI n="A"><text><cl><w n="0" lemma="śū"> śū</w><w n="1">ka</w><w n="2">do</w><w n="3">ṣa</w><w n="4">ci</w><w n="5">ki</w><w n="6" lemma="tsā">tsā </w><w n="7" lemma="ca">ca </w></cl><cl><w n="8">ta</w><w n="9" lemma="thā">thā </w><w n="10" lemma="ca">ca </w></cl><cl><w n="11">mu</w><w n="12">kha</w><w n="13">ro</w><w n="14">gi</w><w n="15" lemma="ṇāṃ">ṇām | </w></cl><cl><w n="16">śo</w><w n="17">pha</w><w n="18">syā</w><w n="19">nā</w><w n="20">ga</w><w n="21">tā</w><w n="22" lemma="nāṃ">nāṃ </w><w n="23" lemma="ca">ca </w></cl><cl><w n="24">ni</w><w n="25">ṣe</w><w n="26" lemma="dhaḥ">dho </w></cl><cl><w n="27">mi</w><w n="28">śra</w><w n="29" lemma="kaṃ">kaṃ </w></cl><cl><w n="30">ta</w><w n="31" lemma="thā">thā ||21|| </w></cl></text></TEI><TEI n="H"><text><cl><w n="0" lemma="śū"> śū</w><w n="1">ka</w><w n="2">do</w><w n="3">ṣa</w><w n="4">ci</w><w n="5">ki</w><w n="6" lemma="tsā">tsā </w><w n="7" lemma="ca">ca </w></cl><cl><w n="8">ta</w><w n="9" lemma="thā">thā </w><w n="10" lemma="ca">ca </w></cl><cl><w n="11">mu</w><w n="12">kha</w><w n="13">ro</w><w n="14">gi</w><w n="15" lemma="ṇāṃ">ṇām | </w></cl><cl><w n="16">śo</w><w n="17">pha</w><w n="18">syā</w><w n="19">nā</w><w n="20">ga</w><w n="21">tā</w><w n="22" lemma="nāṃ">nāñ </w><w n="23" lemma="ca">ca </w></cl><cl><w n="24">ni</w><w n="25">ṣe</w><w n="26" lemma="dhaḥ">dho </w></cl><cl><w n="27">mi</w><w n="28">śra</w><w n="29" lemma="kaṃ">kan </w></cl><cl><w n="30">ta</w><w n="31" lemma="thā">thā || </w></cl></text></TEI><TEI n="N"><text><cl><w n="0" lemma="śū"> śū</w><w n="1">ka</w><w n="2">do</w><w n="3">ṣa</w><w n="4">ci</w><w n="5">ki</w><w n="6" lemma="tsā">tsā </w><w n="7" lemma="ca">ca </w></cl><cl><w n="8">ta</w><w n="9" lemma="thā">thā </w><w n="10" lemma="ca">ca </w></cl><cl><w n="11">mu</w><w n="12">kha</w><w n="13">ro</w><w n="14">gi</w><w n="15" lemma="nāṃ">nām | </w></cl><cl><w n="16">śo</w><w n="17">pha</w><w n="18">syā</w><w n="19">nā</w><w n="20">ga</w><w n="21">tā</w><w n="22" lemma="nāṃ">nāñ </w><w n="23" lemma="ca">ca </w></cl><cl><w n="24">ni</w><w n="25">ṣe</w><w n="26" lemma="dhaḥ">dho </w></cl><cl><w n="27">mi</w><w n="28">śra</w><w n="29" lemma="kaṃ">kan </w></cl><cl><w n="30">ta</w><w n="31" lemma="thā">thā | </w></cl></text></TEI><TEI n="K"><text><cl><w n="0">śū</w><w n="1">ka</w><w n="2">do</w><w n="3">ṣa</w><w n="4">ci</w><w n="5">ki</w><w n="6" lemma="tsā">tsā </w><w n="7" lemma="ca">ca </w></cl><cl><w n="8">ta</w><w n="9" lemma="thā">thā </w><w n="10" lemma="ca">ca </w></cl><cl><w n="11">mu</w><w n="12">kha</w><w n="13">ro</w><w n="14">gi</w><w n="15" lemma="ṇāṃ">ṇāṃ | </w></cl><cl><w n="16">śo</w><w n="17">pha</w><w n="18">syā</w><w n="19">nā</w><w n="20">ga</w><w n="21">tā</w><w n="22" lemma="nāṃ">nāñ </w><w n="23" lemma="ca">ca </w></cl><cl><w n="24">ni</w><w n="25">ṣe</w><w n="26" lemma="dhaḥ">dho </w></cl><cl><w n="27">mi</w><w n="28">śra</w><w n="29" lemma="kaṃ">kan </w></cl><cl><w n="30">ta</w><w n="31" lemma="thā">thā |</w></cl></text></TEI><TEI n="NE"><text><cl><w n="0" lemma="śū"> śū</w><w n="1">ka</w><w n="2">do</w><w n="3">ṣa</w><w n="4">ci</w><w n="5">ki</w><w n="6" lemma="tsā">tsā </w><w n="7" lemma="ca">ca </w></cl><cl><w n="8">ta</w><w n="9" lemma="thā">thā </w><w n="10" lemma="ca">ca </w></cl><cl><w n="11">mu</w><w n="12">kha</w><w n="13">ro</w><w n="14">gi</w><w n="15" lemma="ṇāṃ">ṇāṃ | </w></cl><cl><w n="16">śo</w><w n="17">pha</w><w n="18">syā</w><w n="19">nā</w><w n="20">ga</w><w n="21">tā</w><w n="22" lemma="nāṃ">nāñ </w><w n="23" lemma="ca">ca </w></cl><cl><w n="24">ni</w><w n="25">ṣe</w><w n="26" lemma="dhaḥ">dho </w></cl><cl><w n="27">mi</w><w n="28">śra</w><w n="29" lemma="kaṃ">kan </w></cl><cl><w n="30">ta</w><w n="31" lemma="thā">thā | </w></cl></text></TEI></teiCorpus>
