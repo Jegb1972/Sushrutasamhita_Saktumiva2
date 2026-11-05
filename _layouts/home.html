@@ -14,7 +14,17 @@ layout: default
 </section>
 
 <article class="wrap article-wrap">
+  {%- comment -%}
+    README.md marks where the contents go with <!-- contents:start --> and
+    <!-- contents:end -->; the text between the markers is for GitHub only.
+  {%- endcomment -%}
+  {%- assign head = content | split: '<!-- contents:start -->' -%}
   <div class="sheet prose">
-    {{ content }}
+    {{ head[0] }}
+    {%- if head.size > 1 %}
+    {%- assign tail = head[1] | split: '<!-- contents:end -->' %}
+    {% include sthanas.html %}
+    {{ tail[1] }}
+    {%- endif %}
   </div>
 </article>
