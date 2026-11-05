@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="edition.xsl"?>
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 <script src="./lib/js/xslt-polyfill.min.js" xmlns="http://www.w3.org/1999/xhtml"></script>
     <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
@@ -1030,7 +1031,7 @@
                              arśāṃsi gulmaṃ pravaraṃ prabhūtāṃ
                             <caesura/>
                              prāpnoti rogān vividhāṃs tathānyān ||[<anchor
-                                xml:id="SS.6.38.4.1.add-n1"/>] </l>
+                                xml:id="SS.6.38.4.add-n1"/>] </l>
                         <trailer xml:lang="en">[6.38.4.add]</trailer>
                     </lg>
 
@@ -3072,7 +3073,7 @@
                     <lg xml:id="SS.6.64.39.add5">
                         <l>
                             <caesura/>
-                             tataś candrakarālokaṃ pradoṣaṃ satsuhṛjjanaḥ | </l>
+                             tataś candrakarālokān pradoṣaṃ satsuhṛjjanaḥ | </l>
                     </lg>
                     <lg xml:id="SS.6.64.39.add6">
                         <l>
@@ -4435,7 +4436,12 @@
 
 
     <standOff corresp="#SS.6.64.38.add" type="notes1" subtype="Note">
-        <note target="#SS.6.64.38.add-n1" xml:lang="en">We emend the Nepalese witnesses from <foreign xml:lang="sa-Latn">vyadhika</foreign> to <foreign xml:lang="sa-Latn">dvyadhika</foreign> for sense.  The syllable <foreign xml:lang="sa-Latn">dvya</foreign> and <foreign xml:lang="sa-Latn">vya</foreign> are easily confused.  See also Monier Williams' p. 1031, sub <foreign xml:lang="sa-Latn">vyadhika/hyadhika</foreign>.</note>
+        <note target="#SS.6.64.38.add-n1" xml:lang="en">We emend the Nepalese witnesses 
+            from <foreign xml:lang="sa-Latn">vyadhika</foreign> 
+            to <foreign xml:lang="sa-Latn">dvyadhika</foreign> for sense.  
+            The syllable <foreign xml:lang="sa-Latn">dvya</foreign> 
+            and <foreign xml:lang="sa-Latn">vya</foreign> are easily confused.  
+            See also Monier Williams' p. 1031, sub <foreign xml:lang="sa-Latn">vyadhika/hyadhika</foreign>.</note>
     </standOff>
     <standOff corresp="#SS.6.64.39.add2" type="notes3" subtype="Testimonia">
         <note xml:lang="en" target="#SS.6.64.39.add2-n1">The reading of K
@@ -4557,7 +4563,7 @@
             text never uses the second person in medical injunctions.</note>
     </standOff>
     <standOff corresp="#SS.6.65.40" type="notes1" subtype="Note">
-        <note target="SS.6.65.40-n1">Note the citation here of Dhanvantari's name as an
+        <note target="#SS.6.65.40-n1">Note the citation here of Dhanvantari's name as an
             authority on food. Cf. <title>Suśrutasaṃhitā</title> Sūtrasthāna 46.3 in which
             Dhanvantari is the teacher of the topic of food and drink. See also J. Birch,
             D. Wujastyk et. al. (2021), "Further Insight into the Role of Dhanvantari,"
@@ -4565,10 +4571,10 @@
                 >https://doi.org/10/hbph78</ref>).</note>
     </standOff>
     <standOff corresp="#SS.6.66.17" type="notes1" subtype="Note">
-        <note target="SS.6.66.17-n1">This is the end of the vulgate text.</note>
+        <note target="#SS.6.66.17-n1">This is the end of the vulgate text.</note>
     </standOff>
     <standOff corresp="#SS.6.66.trailer1" type="notes1" subtype="Note">
-        <note target="SS.6.66.trailer1-n1">Note that the chapter colophon of witness H
+        <note target="#SS.6.66.trailer1-n1">Note that the chapter colophon of witness H
             clearly calls this the end of chapter 64, not 66. Cf. the Nepalese reading of
             6.66.15, which also refers to 64 chapters.</note>
     </standOff>
@@ -4589,18 +4595,17 @@
             we read the ablative <foreign>-harṣacandrān</foreign>, it solves the problem
             of <foreign>-nn-</foreign> but is also hard to construe.</note>
     </standOff>
-<standOff corresp="#SS.6.38.4.add" type="notes3" subtype="Testimonia">
-<note xml:lang="en">The following are testimonia to the
-                                vulgate verses below missing in the Nepalese
-                                transmission.</note>
-<note xml:lang="en" target="#SS.6.38.4.1.add-n1">
+<standOff corresp="#SS.6.38.4.add" type="notes1" subtype="Note">
+<note xml:lang="en" target="#SS.6.38.4.add-n1">The following are testimonia to the
+                                vulgate verses below that are missing in the Nepalese
+                                transmission.
                                 <emph>Carakasaṃhitā</emph> 6.30.7ab--8cd:
                                     <foreign>viṃśatir vyāpado yoner nirdiṣṭā rogasaṅgrahe
                                     || mithyācāreṇa tāḥ strīṇāṃ praduṣṭenārtavena ca |
                                     jāyante bījadoṣāc ca daivāc ca śṛṇu tāḥ pṛthak
                                     ||</foreign>
                             </note>
-<note xml:lang="en" target="#SS.6.38.4.1.add-n1">
+<note xml:lang="en" target="#SS.6.38.4.add-n1">
                                 <emph>Mādhavanidāna</emph> 62.1-2ab: <foreign>viṃśatir
                                     vyāpado yonau nirdiṣṭā rogasaṅgrahe | mithyācāreṇa tāḥ
                                     strīṇāṃ praduṣṭenārtavena ca || jāyante bījadoṣāc ca
@@ -22546,17 +22551,14 @@
   </desc>
 </interp>
 <listApp>
-  <app loc="0,19">
-    <lem> pīnastanorujaghanāṃ</lem>
-    <rdg wit="#K">pīnastanorujaṃghanāṃ</rdg>
-    <rdg wit="#H">pīnastanorujaṃghānā</rdg>
+  <app loc="11,19">
+    <lem subtype="suffix">jaghanāṃ</lem>
+    <rdg wit="#K">jaṃghanāṃ</rdg>
+    <rdg wit="#H">jaṃghānā</rdg>
   </app>
-  <app loc="19,37">
-    <rdgGrp type="lemma" select="#H">
-      <lem>rūpayauvanaśālinīm</lem>
-      <rdg type="minor" wit="#H">rūpayauvanaśālinīṃ</rdg>
-    </rdgGrp>
-    <rdg wit="#K">rūpayauvaśālinīṃ</rdg>
+  <app loc="23,30">
+    <lem wit="#H" subtype="infix">yauvana</lem>
+    <rdg wit="#K">yauva</rdg>
   </app>
 </listApp></standOff><standOff type="apparatus" corresp="#SS.6.64.39.add3" source="alignments/SS.6.64.39.add3.xml"><interp type="normalization">
   <desc type="tagfilters">
@@ -22630,9 +22632,11 @@
 </interp>
 <listApp>
   <app loc="5,20">
-    <lem>candrakarālokaṃ</lem>
+    <rdgGrp type="lemma" select="#H">
+      <lem>candrakarālokān</lem>
+      <rdg type="minor" wit="#H">ca<cb/>ndrakarālokān</rdg>
+    </rdgGrp>
     <rdg wit="#K">candrakarālokāṃ</rdg>
-    <rdg wit="#H">candrakarālokān</rdg>
   </app>
 </listApp></standOff><standOff type="apparatus" corresp="#SS.6.64.39.add6" source="alignments/SS.6.64.39.add6.xml"><interp type="normalization">
   <desc type="tagfilters">
