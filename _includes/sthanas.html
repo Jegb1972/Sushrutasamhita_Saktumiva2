@@ -1,0 +1,61 @@
+{%- comment -%}
+  The contents of the edition: an overview strip of the six sthānas,
+  then one panel per sthāna with its volumes and adhyāyas.
+  Data: _data/sthanas.yml
+{%- endcomment -%}
+{%- assign mss = "K|MS Kathmandu Kaiser Library 699,N|MS Kathmandu National Archives 1-1079,H|MS Kathmandu National Archives 5-333" | split: "," -%}
+
+<nav class="sthana-strip" aria-label="The six sthānas">
+  {%- for s in site.data.sthanas %}
+  <a class="sthana-tile" href="#sthana-{{ s.code }}">
+    <span class="tile-num">{{ s.code }}</span>
+    <span class="tile-text">
+      <span class="tile-deva" lang="sa">{{ s.deva }}</span>
+      <span class="tile-name">{{ s.name }}</span>
+      <span class="tile-count">{{ s.gloss }} · {{ s.count }} adhyāyas</span>
+    </span>
+  </a>
+  {%- endfor %}
+</nav>
+
+{%- for s in site.data.sthanas %}
+<section class="sthana" id="sthana-{{ s.code }}">
+  <header class="sthana-head">
+    <span class="sthana-num" aria-hidden="true">{{ s.code }}</span>
+    <div class="sthana-titles">
+      <h2>{{ s.name }}{% if s.alt %} <span class="sthana-alt">({{ s.alt }})</span>{% endif %}</h2>
+      <p class="sthana-gloss">{{ s.gloss }} · {{ s.count }} adhyāyas</p>
+    </div>
+    <span class="sthana-deva" lang="sa">{{ s.deva }}</span>
+  </header>
+
+  {%- if s.witnesses %}
+  <div class="witnesses">
+    <span class="witness-label">Witnesses</span>
+    {%- for m in mss %}{% assign mm = m | split: "|" %}{% assign sig = mm[0] %}{% assign st = s.witnesses[sig] %}
+    <abbr class="siglum siglum-{{ st }}" title="{{ mm[1] }}{% if st == 'partial' %} (in part){% elsif st == 'absent' %} (not available){% endif %}">{{ mm[0] }}</abbr>
+    {%- endfor %}
+    {%- if s.note %}<span class="witness-note">{{ s.note }}</span>{% endif %}
+  </div>
+  {%- endif %}
+
+  <div class="volumes{% if s.volumes.size > 2 %} volumes-many{% endif %}">
+    {%- for v in s.volumes %}
+    <div class="volume">
+      <div class="volume-head">
+        <span class="volume-label">{{ v.label }}{% if v.sub %} <span class="volume-sub">{{ v.sub }}</span>{% endif %}</span>
+        <a class="volume-open" href="{{ v.path | relative_url }}">Open volume <span aria-hidden="true">→</span></a>
+      </div>
+      <ol class="adhyayas" aria-label="Adhyāyas in {{ v.label }}">
+        {%- for n in v.extra %}
+        <li><a href="{{ v.path | relative_url }}#SS.{{ s.code }}.{{ n }}.1"{% if s.starred contains n %} class="starred"{% endif %}>{% if s.starred contains n %}❈{% endif %}{{ n }}</a></li>
+        {%- endfor %}
+        {%- for n in (v.first..v.last) %}{% unless v.skip contains n %}
+        <li><a href="{{ v.path | relative_url }}#SS.{{ s.code }}.{{ n }}.1"{% if s.starred contains n %} class="starred"{% endif %}>{% if s.starred contains n %}❈{% endif %}{{ n }}</a></li>
+        {%- endunless %}{% endfor %}
+      </ol>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+{%- endfor %}

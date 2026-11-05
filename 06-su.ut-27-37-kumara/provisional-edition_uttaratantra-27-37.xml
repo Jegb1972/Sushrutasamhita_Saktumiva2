@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/xsl" href="edition.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 <script src="./lib/js/xslt-polyfill.min.js" xmlns="http://www.w3.org/1999/xhtml"></script>
@@ -86,7 +87,7 @@
                      <scriptNote xml:id="script-ba-va"><foreign xml:lang="sa">ba</foreign>
                         and <foreign xml:lang="sa">va</foreign> not
                         distinguished.</scriptNote>
-                     <scriptNote xml:id="svarna-nasals"/>
+                     <scriptNote xml:id="savarna-nasals"/>
                      <!-- see https://github.com/chchch/upama/issues/87#issuecomment-2357860543 -->
 
                      <scriptNote xml:id="script-all-long-vowels"/>
@@ -135,7 +136,7 @@
                <note xml:lang="en">Draft based on MS K.</note>
 
                <lg xml:id="SS.6.27.1">
-                   <l> athāto navagrahavijñānīyam adhyāyaṃ vyākhyāsyāmaḥ<anchor xml:id="SS.6.27.1-n1"/></l>
+                   <l> athāto navagrahavijñānīyam adhyāyaṃ vyākhyāsyāmaḥ</l>
                   <trailer xml:lang="en">cf. 1938 ed. 6.27.1</trailer>
                </lg>
 
@@ -1173,9 +1174,6 @@
          </div>
       </body>
    </text>
-<standOff corresp="#SS.6.27.1" type="notes1">
-        <note xml:lang="en" target="#SS.6.27.1-n1">[test standoff note].</note>
-    </standOff>
 <standOff type="apparatus" corresp="#SS.6.27.1" source="alignments/SS.6.27.1.xml"><interp type="normalization">
   <desc type="tagfilters">
     <tag xmlns="http://www.tei-c.org/ns/1.0" subtype="ignore">pc</tag>
@@ -1191,20 +1189,24 @@
     <tag xmlns="http://www.tei-c.org/ns/1.0" subtype="ignore">metamark</tag>
     <tag xmlns="http://www.tei-c.org/ns/1.0" subtype="ignore">supplied</tag>
     <tag xmlns="http://www.tei-c.org/ns/1.0" subtype="ignore">surplus</tag>
+    <tag xmlns="http://www.tei-c.org/ns/1.0" subtype="ignore">trailer</tag>
   </desc>
 </interp>
 <listApp>
-  <app loc="6,33">
-    <rdgGrp type="lemma" select="#K">
-      <lem>navagrahavijñānīyam adhyāyaṃ</lem>
-      <rdg type="minor" wit="#K">navagrahavijñānīyam adhyāyaṃ <abbr type="suspension">vyā</abbr><ex>khyāsyāmaḥ</ex></rdg>
-    </rdgGrp>
-    <rdg wit="#H">navagrahavijñāyam</rdg>
-    <rdg wit="#A">navagrahākṛtivijñānīyam adhyāyaṃ</rdg>
+  <app loc="6,25">
+    <lem wit="#K">navagrahavijñānīyam</lem>
+    <rdg wit="#A">navagrahākṛtivijñānīyam</rdg>
+    <rdg wit="#H">navagrahavijñā</rdg>
   </app>
-  <app loc="33,55">
-    <lem>vyākhyāsyāmaḥ cf. 1938 ed</lem>
-    <rdg wit="#H #A">vyākhyāsyāmaḥ</rdg>
+  <app loc="25,33">
+    <rdgGrp type="lemma" select="#A #K">
+      <lem>adhyāyaṃ</lem>
+      <rdg type="minor" wit="#K">adhyāyaṃ <abbr type="suspension">vyā</abbr><ex>khyāsyāmaḥ</ex></rdg>
+    </rdgGrp>
+    <rdg wit="#H">yam</rdg>
+  </app>
+  <app loc="33,46">
+    <lem wit="#A #H">vyākhyāsyāmaḥ</lem>
     <rdg wit="#K"/>
   </app>
 </listApp></standOff><standOff type="apparatus" corresp="#SS.6.27.2" source="alignments/SS.6.27.2.xml"><interp type="normalization">
@@ -1248,12 +1250,12 @@
 </interp>
 <listApp>
   <app loc="0,12">
-    <rdgGrp type="lemma" select="#A">
+    <rdgGrp type="lemma" select="#A #H">
       <lem> bālagrahāṇām</lem>
       <rdg type="minor" wit="#A">bālagrahāṇāṃ</rdg>
+      <rdg type="minor" wit="#H">vālagrahāṇām</rdg>
     </rdgGrp>
     <rdg wit="#K">vālagrahānām</rdg>
-    <rdg wit="#H">vālagrahāṇām</rdg>
   </app>
   <app loc="20,28">
     <lem wit="#K">sādhaṇāṃ</lem>
@@ -1694,7 +1696,7 @@
       <rdg type="minor" wit="#K">vi<unclear/>nnāṃ</rdg>
     </rdgGrp>
     <rdg wit="#A">viḍ bhinnaṃ</rdg>
-    <rdg wit="#H"><caesura/> vi<unclear/>bhinnāṃ</rdg>
+    <rdg wit="#H"><caesura/> vibhinnāṃ</rdg>
   </app>
 </listApp></standOff><standOff type="apparatus" corresp="#SS.6.27.13" source="alignments/SS.6.27.13.xml"><interp type="normalization">
   <desc type="tagfilters">
@@ -1840,12 +1842,6 @@
   </desc>
 </interp>
 <listApp>
-  <listApp type="omissions">
-    <app loc="59,92">
-      <lem>saṃsṛṣṭaḥ śiśurathavakrumaṇḍikāyāḥ </lem>
-      <rdg wit="#A"/>
-    </app>
-  </listApp>
   <app loc="9,30">
     <rdgGrp type="lemma" select="#K #H">
       <lem>surucirapāṇipādavakro</lem>
@@ -1860,8 +1856,17 @@
     </rdgGrp>
     <rdg wit="#A">bahvāśī</rdg>
   </app>
+  <app loc="59,68">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>saṃsṛṣṭaḥ</lem>
+      <rdg type="minor" wit="#K"><caesura/> saṃsṛṣṭaḥ</rdg>
+      <rdg type="minor" wit="#H"><caesura/> saṃsṛṣṭa<cb/>ḥ</rdg>
+    </rdgGrp>
+    <rdg wit="#A"/>
+  </app>
   <app loc="68,92">
     <lem wit="#K">śiśurathavakrumaṇḍikāyāḥ</lem>
+    <rdg wit="#A"/>
     <rdg wit="#H">śiśur atha vakrumaṇḍikā yā</rdg>
   </app>
   <app loc="108,125">
@@ -1977,13 +1982,12 @@
     <rdg wit="#A">cāviśanmuhuḥ | <caesura/> taṃ</rdg>
   </app>
   <app loc="44,51">
-    <lem>bālaṃ na</lem>
-    <rdg wit="#A">bālama</rdg>
-    <rdgGrp select="#K #H">
-      <rdg type="main">vālaṃ  na</rdg>
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>bālaṃ na</lem>
       <rdg type="minor" wit="#K">vālaṃ <cb n="2"/> na</rdg>
       <rdg type="minor" wit="#H">vālan na</rdg>
     </rdgGrp>
+    <rdg wit="#A">bālama</rdg>
   </app>
   <app loc="51,61">
     <rdgGrp type="lemma" select="#K #H">
@@ -2020,10 +2024,6 @@
       <rdg type="minor" wit="#K #H"><caesura/> gṛhaṃ</rdg>
     </rdgGrp>
     <rdg wit="#A"><caesura/> gṛhe</rdg>
-  </app>
-  <app loc="64,69">
-    <lem wit="#A">bālaṃ</lem>
-    <rdg wit="#K #H">vālaṃ</rdg>
   </app>
 </listApp></standOff><standOff type="apparatus" corresp="#SS.6.27.19" source="alignments/SS.6.27.19.xml"><interp type="normalization">
   <desc type="tagfilters">
@@ -2148,13 +2148,6 @@
   <app loc="59,74">
     <lem wit="#K #H">pratigṛṇhīṣva me</lem>
     <rdg wit="#A">pratigṛhṇīṣva me</rdg>
-  </app>
-  <app loc="74,79">
-    <rdgGrp type="lemma" select="#A">
-      <lem>baliṃ</lem>
-      <rdg type="minor" wit="#A">balim</rdg>
-    </rdgGrp>
-    <rdg wit="#K #H">valiṃ</rdg>
   </app>
   <app loc="80,99">
     <lem wit="#K #H">nīrujānirvvikāraś ca</lem>
@@ -2333,12 +2326,6 @@
   </desc>
 </interp>
 <listApp>
-  <listApp type="omissions">
-    <app loc="46,81">
-      <lem>vadāruṇi… ca</lem>
-      <rdg wit="#A"/>
-    </app>
-  </listApp>
   <app loc="0,7">
     <lem wit="#K #H"> siddhaṃ</lem>
     <rdg wit="#A">devadāruṇi rāsnāyāṃ madhureṣu drumeṣu ca | <caesura/> siddhaṃ</rdg>
@@ -2350,6 +2337,18 @@
       <rdg type="minor" wit="#H">pānamasyopakalpayet | <caesura/> devadā<lb n="3"/>ruṇi</rdg>
     </rdgGrp>
     <rdg wit="#A">pānamasmai prayojayet</rdg>
+  </app>
+  <app loc="54,61">
+    <lem wit="#K #H">rāsnā ca</lem>
+    <rdg wit="#A"/>
+  </app>
+  <app loc="61,78">
+    <lem wit="#K #H">madhureṣv adrijeṣu</lem>
+    <rdg wit="#A"/>
+  </app>
+  <app loc="78,80">
+    <lem wit="#K #H">ca</lem>
+    <rdg wit="#A"/>
   </app>
 </listApp></standOff><standOff type="apparatus" corresp="#SS.6.28.6" source="alignments/SS.6.28.6.xml"><interp type="normalization">
   <desc type="tagfilters">
@@ -2494,12 +2493,12 @@
     <rdg wit="#A">bhakṣyāḥ</rdg>
   </app>
   <app loc="76,88">
-    <lem>balinnivedya</lem>
-    <rdg wit="#A">balirnivedyaḥ</rdg>
-    <rdgGrp select="#K #H">
-      <rdg type="main">valinnivedya</rdg>
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>balinnivedya</lem>
+      <rdg type="minor" wit="#K">valinnivedya</rdg>
       <rdg type="minor" wit="#H">valin nivedya</rdg>
     </rdgGrp>
+    <rdg wit="#A">balirnivedyaḥ</rdg>
   </app>
   <app loc="88,98">
     <lem wit="#K #H">sakukkuṭāḥ</lem>
@@ -3427,10 +3426,6 @@
   </desc>
 </interp>
 <listApp>
-  <app loc="0,8">
-    <lem wit="#A"> balir eṣa</lem>
-    <rdg wit="#K #H">valir eṣa</rdg>
-  </app>
   <app loc="8,19">
     <lem wit="#K">karañjais tu</lem>
     <rdg wit="#A">karañjeṣu</rdg>
@@ -3524,11 +3519,11 @@
     <rdg wit="#A">bhairavasvarā</rdg>
   </app>
   <app loc="40,59">
-    <rdgGrp type="lemma" select="#A">
+    <rdgGrp type="lemma" select="#A #K">
       <lem>lambodarīśaṅkukarṇī</lem>
       <rdg type="minor" wit="#A"><caesura/> lambodarī śaṅkukarṇī</rdg>
+      <rdg type="minor" wit="#K"><caesura/> laṃvodarīśaṅkukarṇī</rdg>
     </rdgGrp>
-    <rdg wit="#K"><caesura/> laṃvodarīśaṅkukarṇī</rdg>
     <rdg wit="#H"><caesura/> laṃ<lb n="5"/>vodarīśaṅkukarṇā</rdg>
   </app>
   <app loc="67,80">
@@ -4048,12 +4043,12 @@
     <rdg wit="#H">kapotavaṃk ca aralur ca</rdg>
   </app>
   <app loc="57,68">
-    <lem>syur bālasya</lem>
-    <rdg wit="#A">syur bālānāṃ</rdg>
-    <rdgGrp select="#K #H">
-      <rdg type="main">syur vālasya</rdg>
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>syur bālasya</lem>
+      <rdg type="minor" wit="#K">syur vālasya</rdg>
       <rdg type="minor" wit="#H">syur vvālasya</rdg>
     </rdgGrp>
+    <rdg wit="#A">syur bālānāṃ</rdg>
   </app>
 </listApp></standOff><standOff type="apparatus" corresp="#SS.6.32.4" source="alignments/SS.6.32.4.xml"><interp type="normalization">
   <desc type="tagfilters">
@@ -4717,7 +4712,7 @@
   <app loc="18,25">
     <lem wit="#K">kaṣāyam</lem>
     <rdg wit="#A">kaṣāyām</rdg>
-    <rdg wit="#H"><unclear/>ṣāyam</rdg>
+    <rdg wit="#H">ṣāyam</rdg>
   </app>
   <app loc="25,36">
     <rdgGrp type="lemma" select="#K #H">
@@ -4725,10 +4720,6 @@
       <rdg type="minor" wit="#K">va<cb n="2"/>radhāriṇī</rdg>
     </rdgGrp>
     <rdg wit="#A">baravāsinī</rdg>
-  </app>
-  <app loc="41,50">
-    <lem wit="#A">bālam imaṃ</lem>
-    <rdg wit="#K #H">vālam imaṃ</rdg>
   </app>
   <app loc="55,74">
     <lem wit="#K #H">rakṣatām andhapūtanā</lem>
@@ -5087,10 +5078,6 @@
     <lem wit="#K #H"> jalāyaśānte</lem>
     <rdg wit="#A">jalāśayānte</rdg>
   </app>
-  <app loc="11,18">
-    <lem wit="#A">bālasya</lem>
-    <rdg wit="#K #H">vālasya</rdg>
-  </app>
   <app loc="18,25">
     <lem wit="#K">spanaṃñ</lem>
     <rdg wit="#A">snapanaṃ</rdg>
@@ -5252,9 +5239,11 @@
     <rdg wit="#A">yojyāḥ syu</rdg>
   </app>
   <app loc="61,68">
-    <lem>bālasya</lem>
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>bālasya</lem>
+      <rdg type="minor" wit="#K #H">vālasya</rdg>
+    </rdgGrp>
     <rdg wit="#A">r bālānāṃ</rdg>
-    <rdg wit="#K #H">vālasya</rdg>
   </app>
 </listApp></standOff><standOff type="apparatus" corresp="#SS.6.35.4" source="alignments/SS.6.35.4.xml"><interp type="normalization">
   <desc type="tagfilters">
@@ -5716,7 +5705,7 @@
       <rdg type="minor" wit="#K">vayasthā ¦ ¦ ¦ ¦<unclear/></rdg>
     </rdgGrp>
     <rdg wit="#A">vayaḥsthāṃ</rdg>
-    <rdg wit="#H">vayaḥ sthā<unclear/></rdg>
+    <rdg wit="#H">vayaḥ sthā</rdg>
   </app>
   <app loc="16,23">
     <lem wit="#K">sahitāṃ</lem>
@@ -5913,17 +5902,6 @@
     </rdgGrp>
     <rdg wit="#A">ś calākṣibhrūḥ</rdg>
   </app>
-  <app loc="37,42">
-    <rdgGrp type="lemma" select="#A">
-      <lem>bālaṃ</lem>
-      <rdg type="minor" wit="#A"><caesura/> bālaṃ</rdg>
-    </rdgGrp>
-    <rdg wit="#K #H"><caesura/> vālaṃ</rdg>
-  </app>
-  <app loc="42,50">
-    <lem wit="#A">bālapitā</lem>
-    <rdg wit="#K #H">vālapitā</rdg>
-  </app>
   <app loc="63,77">
     <lem wit="#K #H">bhirakṣatām iti</lem>
     <rdg wit="#A">bhir akṣatu</rdg>
@@ -6038,10 +6016,6 @@
   </desc>
 </interp>
 <listApp>
-  <app loc="21,30">
-    <lem wit="#A">bālānāṃ ya</lem>
-    <rdg wit="#K #H">vālānāṃ ya</rdg>
-  </app>
   <app loc="59,77">
     <lem wit="#K">nārīpuruṣavigrahāṃ</lem>
     <rdg wit="#A #H">nārīpuruṣavigrahāḥ</rdg>
@@ -6214,13 +6188,6 @@
   </desc>
 </interp>
 <listApp>
-  <app loc="39,47">
-    <rdgGrp type="lemma" select="#A">
-      <lem>bibharti</lem>
-      <rdg type="minor" wit="#A"><caesura/> bibharti</rdg>
-    </rdgGrp>
-    <rdg wit="#K #H"><caesura/> vibharti</rdg>
-  </app>
   <app loc="47,54">
     <lem wit="#K #H">cāparaṃ</lem>
     <rdg wit="#A">cāparāṃ</rdg>
@@ -6251,13 +6218,6 @@
   </desc>
 </interp>
 <listApp>
-  <app loc="0,13">
-    <lem wit="#A"> bālalīlādharo</lem>
-    <rdgGrp select="#K #H">
-      <rdg type="main">vālalīlādharo</rdg>
-      <rdg type="minor" wit="#K">vālalīlā<cb n="2"/>dharo</rdg>
-    </rdgGrp>
-  </app>
   <app loc="19,23">
     <lem wit="#A #K">devo</lem>
     <rdg wit="#H">devaṃ</rdg>
@@ -6267,9 +6227,11 @@
     <rdg wit="#A">rudrāgnisṃbhavaḥ</rdg>
   </app>
   <app loc="47,53">
-    <lem>bāleṣu</lem>
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>bāleṣu</lem>
+      <rdg type="minor" wit="#K #H">vāleṣu</rdg>
+    </rdgGrp>
     <rdg wit="#A">cāreṣu</rdg>
-    <rdg wit="#K #H">vāleṣu</rdg>
   </app>
   <app loc="53,63">
     <rdgGrp type="lemma" select="#K #H">
@@ -6318,13 +6280,12 @@
     <rdg wit="#K #H">kecid paṇḍitāḥ</rdg>
   </app>
   <app loc="39,66">
-    <lem>gṛṇhātīty aparijñānād bruvate</lem>
-    <rdg wit="#A"><caesura/> gṛhṇātītyalpavijñānā bruvate</rdg>
-    <rdgGrp select="#K #H">
-      <rdg type="main"> gṛṇhātītya parijñānād vruvate</rdg>
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>gṛṇhātīty aparijñānād bruvate</lem>
       <rdg type="minor" wit="#K"><caesura/> gṛṇhātītya parijñā<cb n="3"/>nād vruvate</rdg>
       <rdg type="minor" wit="#H"><caesura/> gṛṇhātītya parijñānād vruvate<cb/></rdg>
     </rdgGrp>
+    <rdg wit="#A"><caesura/> gṛhṇātītyalpavijñānā bruvate</rdg>
   </app>
 </listApp></standOff><standOff type="apparatus" corresp="#SS.6.37.11" source="alignments/SS.6.37.11.xml"><interp type="normalization">
   <desc type="tagfilters">
@@ -6518,9 +6479,11 @@
     <rdg wit="#A">varṣoṣṇamārutaiḥ</rdg>
   </app>
   <app loc="44,68">
-    <lem>ijyābalinamaskārair japya</lem>
+    <rdgGrp type="lemma" select="#K">
+      <lem>ijyābalinamaskārair japya</lem>
+      <rdg type="minor" wit="#K"><caesura/> ijyāvalinamaskārair japya</rdg>
+    </rdgGrp>
     <rdg wit="#A"><caesura/> ijyāñjalinamaskārajapa</rdg>
-    <rdg wit="#K"><caesura/> ijyāvalinamaskārair japya</rdg>
     <rdg wit="#H"><caesura/> ijyāvalinama¦<pb facs="397" n="394r" ana="dscn3368fol393_bottom.jpg"/>skārair jappa</rdg>
   </app>
   <app loc="68,82">
@@ -6706,12 +6669,12 @@
     <rdg wit="#A">teṣu ye</rdg>
   </app>
   <app loc="51,66">
-    <lem>bālāms tān hiṃsaṃ</lem>
-    <rdg wit="#A">bālāstān gṛhṇī</rdg>
-    <rdgGrp select="#K #H">
-      <rdg type="main">vālām stān hiṃsaṃ</rdg>
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>bālāms tān hiṃsaṃ</lem>
+      <rdg type="minor" wit="#K">vālām stān hiṃsaṃ</rdg>
       <rdg type="minor" wit="#H">vālāñ stān hiṃsaṃ</rdg>
     </rdgGrp>
+    <rdg wit="#A">bālāstān gṛhṇī</rdg>
   </app>
 </listApp></standOff><standOff type="apparatus" corresp="#SS.6.37.20" source="alignments/SS.6.37.20.xml"><interp type="normalization">
   <desc type="tagfilters">
@@ -6732,9 +6695,11 @@
 </interp>
 <listApp>
   <app loc="59,63">
-    <lem>bālā</lem>
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>bālā</lem>
+      <rdg type="minor" wit="#K #H">vālā</rdg>
+    </rdgGrp>
     <rdg wit="#A">bālān</rdg>
-    <rdg wit="#K #H">vālā</rdg>
   </app>
   <app loc="63,71">
     <rdgGrp type="lemma" select="#K #H">
@@ -6761,10 +6726,6 @@
   </desc>
 </interp>
 <listApp>
-  <app loc="12,19">
-    <lem wit="#A">bālās tu</lem>
-    <rdg wit="#K #H">vālās tu</rdg>
-  </app>
   <app loc="19,35">
     <lem wit="#K #H">duścikitsyatamāḥ</lem>
     <rdg wit="#A">duś cikitsyatamā</rdg>
@@ -6899,8 +6860,10 @@
     <rdg wit="#H"><caesura/> sampiṇḍu na hi</rdg>
   </app>
   <app loc="54,66">
-    <lem>bālānām adhyā</lem>
-    <rdg wit="#K">vālānām adhyā</rdg>
+    <rdgGrp type="lemma" select="#K">
+      <lem>bālānām adhyā</lem>
+      <rdg type="minor" wit="#K">vālānām adhyā</rdg>
+    </rdgGrp>
     <rdg wit="#H">pālānām adhyā</rdg>
   </app>
   <app loc="66,77">
@@ -6925,18 +6888,14 @@
   </desc>
 </interp>
 <listApp>
-  <listApp type="omissions">
-    <app loc="0,38">
-      <lem>samāptaṃ… iti</lem>
-      <rdg wit="#H"/>
-    </app>
-  </listApp>
   <app loc="0,8">
     <lem wit="#K"> samāptaṃ</lem>
     <rdg wit="#A">iti suśrutasaṃhitā</rdg>
+    <rdg wit="#H"/>
   </app>
   <app loc="8,24">
     <lem wit="#K">kumārabhṛtyam iti</lem>
     <rdg wit="#A">yām uttaratantrāntargate kumāratantre grahotpattyadhyāyo nāma (ekādaśo 'dhyāyaḥ, āditaḥ) saptatriṃśattamo 'dhyāyaḥ</rdg>
+    <rdg wit="#H">iti kumāratantre grahotpattin nāmaikādaśamodhyāya uttaratantre pañcatriṃśattamo 'dhyā<pb facs="398" n="394v" ana="dscn3369fol394_top.jpg"/>yaḥ</rdg>
   </app>
 </listApp></standOff></TEI>

@@ -1,0 +1,116 @@
+# The contents of the edition, shown on the home page by _includes/sthanas.html.
+#
+#   code:      the sthāna number used in the anchors (SS.<code>.<adhyāya>.1)
+#   witnesses: K, N, H — state is "full", "partial" or "absent"
+#   starred:   adhyāyas marked ❈ in the list
+#   volumes:   one entry per HTML file; adhyāyas run from `first` to `last`,
+#              with `extra` (if any) listed first.
+
+- code: 1
+  name: Sūtrasthānam
+  alt: also called Ślokasthānam
+  deva: सूत्रस्थानम्
+  gloss: Fundamentals
+  count: 46
+  witnesses: { K: partial, N: full, H: full }
+  note: Witness K is not available after SS.1.32.
+  starred: [1, 2, 6, 13, 14, 16]
+  volumes:
+    - label: Adhyāyas 1–31
+      path: 01-su.su-1-31/provisional-edition_sutrasthana-1-31.html
+      first: 1
+      last: 31
+    - label: Adhyāyas 32–46
+      path: 01-su.su-32-end/provisional-edition_sutrasthana-32-end.html
+      first: 32
+      last: 46
+
+- code: 2
+  name: Nidānasthānam
+  deva: निदानस्थानम्
+  gloss: Diagnosis
+  count: 16
+  witnesses: { K: partial, N: full, H: full }
+  note: Witness K is not available for most of this sthāna.
+  starred: [1]
+  volumes:
+    - label: Adhyāyas 1–16
+      path: 02-su.ni/provisional-edition_nidanasthana.html
+      first: 1
+      last: 16
+
+- code: 3
+  name: Śārīrasthānam
+  deva: शारीरस्थानम्
+  gloss: The body
+  count: 10
+  witnesses: { K: absent, N: partial, H: full }
+  note: Witness K is not available for this sthāna. Witness N ends at 3.2.35.
+  starred: [1, 2, 3]
+  volumes:
+    - label: Adhyāyas 1–10
+      path: 03-su.sa/provisional-edition_sarirasthana.html
+      first: 1
+      last: 10
+
+- code: 4
+  name: Cikitsāsthānam
+  deva: चिकित्सास्थानम्
+  gloss: Therapy
+  count: 40
+  witnesses: { K: partial, N: absent, H: full }
+  note: Witness K is not available for adhyāyas 1–18, 27 and 28.
+  starred: [4]
+  volumes:
+    - label: Adhyāyas 1–20
+      path: 04-su.ci-1-20/provisional-edition_cikitsasthana_01-20.html
+      first: 1
+      last: 20
+    - label: Adhyāyas 21–40
+      path: 04-su.ci-21-40/provisional-edition_cikitsasthana_21-40.html
+      first: 21
+      last: 40
+
+- code: 5
+  name: Kalpasthānam
+  deva: कल्पस्थानम्
+  gloss: Toxicology
+  count: 8
+  witnesses: { K: full, N: absent, H: full }
+  starred: [1, 2, 3, 4, 5, 6, 7, 8]
+  volumes:
+    - label: Adhyāyas 1–8
+      path: 05-su.ka/provisional-edition_kalpasthana.html
+      first: 1
+      last: 8
+
+- code: 6
+  name: Uttaratantram
+  deva: उत्तरतन्त्रम्
+  gloss: Supplement
+  count: 66
+  starred: [64]
+  volumes:
+    - label: Śālākyatantram
+      sub: adhyāyas 1–26
+      path: 06-su.ut-01-26-salakya/provisional-edition_uttaratantra-01-26.html
+      first: 1
+      last: 26
+      skip: [24]
+    - label: Kumāratantram
+      sub: adhyāyas 27–37
+      path: 06-su.ut-27-37-kumara/provisional-edition_uttaratantra-27-37.html
+      first: 27
+      last: 37
+    - label: Kāyacikitsātantram
+      sub: adhyāyas 39–57, with 24
+      path: 06-su.ut-39-24-57-kayacikitsa/provisional-edition_uttaratantra-39-24-57.html
+      extra: [24]
+      first: 39
+      last: 57
+    - label: Kāyacikitsātantra – Daśaka
+      sub: adhyāyas 58–66, with 38
+      path: 06-su.ut-58-38-66-dasaka/provisional-edition_uttaratantra-58-38-66.html
+      extra: [38]
+      first: 58
+      last: 66

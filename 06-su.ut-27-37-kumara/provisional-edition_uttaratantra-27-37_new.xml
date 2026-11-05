@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/xsl" href="edition.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -68,7 +69,7 @@
                      <scriptNote xml:id="script-ba-va"><foreign xml:lang="sa">ba</foreign>
                         and <foreign xml:lang="sa">va</foreign> not
                         distinguished.</scriptNote>
-                     <scriptNote xml:id="svarna-nasals"/>
+		<scriptNote xml:id="savarna-nasals"/>
                      <!-- see https://github.com/chchch/upama/issues/87#issuecomment-2357860543 -->
 
                      <scriptNote xml:id="script-all-long-vowels"/>
@@ -117,7 +118,7 @@
                <note xml:lang="en">Draft based on MS K.</note>
 
                <lg xml:id="SS.6.27.1">
-                   <l> athāto navagrahavijñānīyam adhyāyaṃ vyākhyāsyāmaḥ<anchor xml:id="SS.6.27.1-n1"/></l>
+                   <l> athāto navagrahavijñānīyam adhyāyaṃ vyākhyāsyāmaḥ</l>
                   <trailer xml:lang="en">cf. 1938 ed. 6.27.1</trailer>
                </lg>
 
@@ -1155,7 +1156,4 @@
          </div>
       </body>
    </text>
-<standOff corresp="#SS.6.27.1" type="notes1">
-        <note xml:lang="en" target="#SS.6.27.1-n1">[test standoff note].</note>
-    </standOff>
 </TEI>
