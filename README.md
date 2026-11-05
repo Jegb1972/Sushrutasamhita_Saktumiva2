@@ -16,7 +16,6 @@ The editions and manuscript transcriptions can be viewed at the links below.  Li
 
 The following edition files are presented using Saktumiva 2.0, written by [Dr Charles Li](https://orcid.org/0000-0001-8247-9374).  [Documentation for Saktumiva 2.0](https://chchch.github.io/saktumiva/docs/).  Clicking on a MS siglum in the apparatus takes you to a window showing the diplomatic transcription of that witness at that point in the text, with matching manuscript image.
 
-The following files are complex and will take a moment or two to load and display in your browser.
 
 <!-- contents:start -->
 The list of sthānas, volumes and adhyāyas is shown on the [website](https://sushrutaproject1.github.io/Sushrutasamhita_Saktumiva2/).
