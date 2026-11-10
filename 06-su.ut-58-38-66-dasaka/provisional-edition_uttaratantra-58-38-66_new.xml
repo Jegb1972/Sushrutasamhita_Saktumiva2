@@ -76,6 +76,37 @@
             </sourceDesc>
 
         </fileDesc>
+<xenoData>
+    <stemma format="nexml">
+<nex:nexml generator="SplitsTree6" version="0.9" xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sp5="https://github.com/danielhuson/splitstree6">
+
+	<otus id="otus1" label="TaxaBlock">
+		<otu id="otu1" label="A"/>
+		<otu id="otu2" label="J"/>
+		<otu id="otu3" label="K"/>
+		<otu id="otu4" label="H"/>
+	</otus>
+	
+	<trees otus="otus1" id="trees1" label="TreesBlock">
+		<tree id="tree1" label="tree1" xsi:type="nex:FloatTree">
+			<node id="n1" label="A" otu="otu1"/>
+			<node id="n2" label="J" otu="otu2"/>
+			<node id="n3" label="K" otu="otu3"/>
+			<node id="n4" label="H" otu="otu4"/>
+			<node id="n5"/>
+			<node id="n6"/>
+			<node id="n7" root="true"/>
+			<edge source="n5" target="n4" id="e1" length="0.1129794791340828"/>
+			<edge source="n6" target="n1" id="e2" length="0.18518051505088806"/>
+			<edge source="n6" target="n2" id="e3" length="0.23048213124275208"/>
+			<edge source="n5" target="n6" id="e4" length="0.0878751277923584"/>
+			<edge source="n7" target="n5" id="e5" length="0.009580562263727188"/>
+			<edge source="n7" target="n3" id="e6" length="0.0862250603735447"/>
+		</tree>
+	</trees>
+</nex:nexml>
+</stemma>
+</xenoData>
 
         <revisionDesc>
             <change when="2020-11-04" who="Dominik Wujastyk">Began this file.</change>
@@ -2987,8 +3018,8 @@
                         <l>
                             <caesura/>
                              śuciḥ śuklāmbaradharaś candanāgurubhūṣitaḥ | </l>
-                    </lg>
-                    <lg xml:id="SS.6.64.39.add2">
+                    
+                    
                         <l>
                             <caesura/>
                              pīnastanorujaghanāṃ rūpayauvanaśālinīm ||46|| <anchor
@@ -4380,7 +4411,7 @@
             and <foreign xml:lang="sa-Latn">vya</foreign> are easily confused.  
             See also Monier Williams' p. 1031, sub <foreign xml:lang="sa-Latn">vyadhika/hyadhika</foreign>.</note>
     </standOff>
-    <standOff corresp="#SS.6.64.39.add2" type="Testimonia">
+    <standOff corresp="#SS.6.64.39.add1" type="Testimonia">
         <note xml:lang="en" target="#SS.6.64.39.add2-n1">The reading of K
                 <foreign>°jaṃghanāṃ</foreign>, which is unmetrical, has been emended to
                 <foreign>°jaghanāṃ</foreign>, which yields a better sense and restores the
