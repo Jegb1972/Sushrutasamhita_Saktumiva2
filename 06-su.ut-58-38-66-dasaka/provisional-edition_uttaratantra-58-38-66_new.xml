@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" 
+  type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/xsl" href="edition.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>The Nepalese Version of the Suśrutasaṃhitā: Uttaratantra, the final
@@ -77,7 +78,7 @@
 
         </fileDesc>
 <xenoData>
-    <stemma format="nexml">
+   <stemma xmlns="https://sushrutaproject.github.io" format="nexml">
 <nex:nexml generator="SplitsTree6" version="0.9" xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sp5="https://github.com/danielhuson/splitstree6">
 
 	<otus id="otus1" label="TaxaBlock">
@@ -2715,14 +2716,14 @@
 
                     <lg xml:id="SS.6.64.17ab">
                         <l> varṣāsu sañcitam pittaṃ nirharec ca virecanaiḥ | </l>
-                        <note>[cf. 1938 ed. 6.64.17ab]</note>
-                        <trailer xml:lang="en">[cf. 1938 ed. 6.64.17ab]</trailer>
+                     
                         <l/>
                                       
                         <l>
                             <!--  <label xml:lang="en">cf. 1938 ed. 6.64.17a</label>-->
                             <caesura/>
                              tiktasarpiḥprayogair vā sirāṇāñ cāpi mokṣaṇaiḥ ||22|| </l>
+                                <trailer xml:lang="en">[first pāda, cf. 1938 ed. 6.64.17ab]</trailer>
                     </lg>
 
                     <lg xml:id="SS.6.64.18ab">
@@ -2869,14 +2870,12 @@
 
                     
                         <l> eṣa eva vidhiḥ kāryaḥ śiśire samudāhṛtaḥ | </l>
-                        <trailer xml:lang="en">[cf. 1938 ed. 6.64.31cd]</trailer>
-                    
-
-                    
+                        
                         <l>
                             <!--  <label xml:lang="en">6.64.31.add1</label>-->
                            
                              hemantaśeṣaḥ śiśiraḥ ke cid icchanti vaidyakāḥ ||33|| </l>
+                             <trailer xml:lang="en">[first pāda, cf. 1938 ed. 6.64.31cd]</trailer>
                     </lg>
                     <lg xml:id="SS.6.64.31.add2">
                         <l>
@@ -2975,18 +2974,12 @@
 
                     
                         <l> yavamudgamadhuprāyaṃ vasante bhojanaṃ hitam | </l>
-                        <trailer xml:lang="en">[cf. 1938 ed. 6.64.37cd]</trailer>
-                    
-
-                    
+                        
                         <l/>
-                    
-
-                    
                         <l>
                             <caesura/>
                              vyāyāmo dvyadhikaś cātra sarva eva praśasyate<anchor xml:id="SS.6.64.38.add-n1"/>   ||44||</l>
-                    </lg>
+                    <trailer xml:lang="en">[first pāda, cf. 1938 ed. 6.64.37cd]</trailer></lg>
 
                     <lg xml:id="SS.6.64.39cd">
                         <l> śirovirekair vamanaiḥ kaṣāyaiḥ kavaḍagrahaiḥ | </l>
